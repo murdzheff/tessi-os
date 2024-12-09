@@ -46,7 +46,7 @@ done
 
 #custom scripts
 
-bash ./scripts/wallpaper.sh
+bash /tmp/scripts/wallpaper.sh
 
 #### Example for enabling a System Unit File
 
