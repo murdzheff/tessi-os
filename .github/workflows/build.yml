@@ -137,7 +137,8 @@ jobs:
           password: ${{ env.REGISTRY_PASSWORD }}
           extra-args: |
             --compression-format=zstd
-
+       - name: Build Container Installer
+         uses: JasonN3/build-container-installer@v1.2.3
       # This section is optional and only needs to be enabled if you plan on distributing
       # your project for others to consume. You will need to create a public and private key
       # using Cosign and save the private key as a repository secret in Github for this workflow
@@ -155,3 +156,5 @@ jobs:
           TAGS: ${{ steps.push.outputs.digest }}
           COSIGN_EXPERIMENTAL: false
           COSIGN_PRIVATE_KEY: ${{ secrets.SIGNING_SECRET }}
+
+            
