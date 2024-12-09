@@ -44,6 +44,10 @@ done
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
+#custom scripts
+
+bash /tmp/scripts/wallpaper.sh
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
