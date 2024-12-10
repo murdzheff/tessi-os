@@ -5,7 +5,7 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH='/var/home/murdzheff/.oh-my-bash'
+export OSH='/var/home/$USER/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -146,4 +146,3 @@ source "$OSH"/oh-my-bash.sh
 BLUEFIN_FETCH_LOGO="$(/usr/bin/find /usr/share/ublue-os/bluefin-logos/symbols/* | /usr/bin/shuf -n 1 )"
 
 alias fastfetch='/usr/bin/fastfetch --logo ${BLUEFIN_FETCH_LOGO}  -c /usr/share/ublue-os/ublue-os.jsonc'
-
