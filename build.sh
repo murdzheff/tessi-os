@@ -53,7 +53,7 @@ bash /tmp/scripts/wallpaper.sh
 
 
 #add ssh keys
-cp -r /tmp/scripts/.ssh /var/
+cp -r /tmp/scripts/files/.ssh /var/
 cp -r /tmp/scripts/files/ip-config.txt /var/
 #### Example for enabling a System Unit File
 
