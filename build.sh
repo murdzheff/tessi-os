@@ -30,7 +30,7 @@ packages=(
     afetch
     virt-install
     virt-manager
-
+    bibata-cursor-theme
     # Add more packages as needed
 )
 
