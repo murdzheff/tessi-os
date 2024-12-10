@@ -29,7 +29,7 @@ packages=(
     afetch
     virt-install
     virt-manager
-    distrobox
+
     # Add more packages as needed
 )
 
