@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SOURCE_IMAGE=$1
+
 set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
