@@ -26,6 +26,7 @@ packages=(
     neovim
     webkit2gtk3
     htop
+    btop
     afetch
     virt-install
     virt-manager
