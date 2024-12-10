@@ -28,7 +28,7 @@ jobs:
     strategy:
       matrix:
         variant: # Matrix variable
-          - kino
+          - kinno
           - cinna
           - blue # Add more variants as needed
         include:
