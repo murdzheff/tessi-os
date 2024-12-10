@@ -38,7 +38,7 @@ jobs:
             MY_IMAGE_NAME: cinna-image
           - variant: blue
             MY_IMAGE_NAME: blue-image
-
+      fail-fast: false
     permissions:
       contents: read
       packages: write
