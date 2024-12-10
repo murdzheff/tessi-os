@@ -1,0 +1,3 @@
+[submodule "scripts/skel/.oh-my-bash"]
+	path = scripts/skel/.oh-my-bash
+	url = https://github.com/ohmybash/oh-my-bash

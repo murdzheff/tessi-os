@@ -1,13 +1,6 @@
 #!/bin/sh
 
 set -ouex pipefail
-mkdir /root
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-
-
-cp -r ~/.oh-my-bash /tmp/scripts/skel/
-cp ~/.bashrc /tmp/scripts/skel/.bashrc
-cp ~/.bash_profile /tmp/scripts/skel/.bash_profile
-
+#move the scel folder with all required
 cp -r /tmp/scripts/skel /etc/
