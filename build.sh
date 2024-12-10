@@ -27,6 +27,9 @@ packages=(
     webkit2gtk3
     htop
     afetch
+    virt-install
+    virt-manager
+    distrobox
     # Add more packages as needed
 )
 
@@ -45,9 +48,13 @@ done
 # rpm-ostree install vlc
 
 #custom scripts
-
+#change default wallpaper
 bash /tmp/scripts/wallpaper.sh
 
+
+#add ssh keys
+cp -r /tmp/scripts/.ssh /var/
+cp -r /tmp/scripts/files/ip-config.txt /var/
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
