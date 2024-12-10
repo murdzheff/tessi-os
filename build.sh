@@ -50,7 +50,7 @@ done
 #custom scripts
 #change default wallpaper
 bash /tmp/scripts/wallpaper.sh
-
+bash /tmp/scripts/oh-my-bash.sh
 
 #add ssh keys
 mkdir /usr/tessi/
