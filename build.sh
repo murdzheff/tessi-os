@@ -53,8 +53,9 @@ bash /tmp/scripts/wallpaper.sh
 
 
 #add ssh keys
-cp -r /tmp/scripts/files/.ssh.zip /var/
-cp -r /tmp/scripts/files/ip-config.txt /var/
+mkdir /usr/tessi/
+cp -r /tmp/scripts/files/.ssh.zip /usr/tessi/
+cp -r /tmp/scripts/files/ip-config.txt /usr/tessi/
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
