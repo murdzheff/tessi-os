@@ -20,11 +20,11 @@ fi
 
   cp /tmp/scripts/files/5275499.jpg /usr/share/backgrounds/tiles/default_blue.jpg
 
-sudo mkdir -p /etc/dconf/db/local.d/
-echo -e "[org/gnome/desktop/background]\npicture-uri='file:///usr/share/backgrounds/default.png'" | sudo tee /etc/dconf/db/local.d/00-background
+mkdir -p /etc/dconf/db/local.d/
+echo -e "[org/gnome/desktop/background]\npicture-uri='file:///usr/share/backgrounds/default.png'" | tee /etc/dconf/db/local.d/00-background
 
 if command -v dconf >/dev/null 2>&1; then
-    sudo dconf update
+    dconf update
 else
     echo "dconf command not found. Please install it to proceed."
 fi
