@@ -71,6 +71,9 @@ wget -P /tmp/scripts/files/ https://github.com/tn5250j/tn5250j/releases/download
 mkdir /usr/lib/tn5250j
 mv /tmp/scripts/files/tn5250j-0.8.0-beta2-no-depedencies.jar /usr/lib/tn5250j/tn5250j.jar
 
+#Citrix
+curl https://downloads.citrix.com/22985/linuxx64-24.8.0.98.tar.gz?__gda__=exp=1733957268~acl=/*~hmac=df56bbadddb643b1f878c00da4042087785b99148406e4dcf093b579cadc1a0b --output /tmp/scripts/ica.tar.gz
+cp -r /tmp/scripts/ica.tar.gz /usr/tessi/
 
 
 
