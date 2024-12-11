@@ -32,6 +32,7 @@ packages=(
     btop
     afetch
     virt-install
+    java-latest-openjdk
     virt-manager
     net-tools
     # Add more packages as needed
@@ -62,9 +63,13 @@ cp -r /tmp/scripts/files/ip-config.txt /usr/tessi/
 
 
 #vmware horizon test
-
 wget -P /tmp/scripts/ https://download3.omnissa.com/software/CART25FQ2_LIN64_RPMPKG_2406/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
 rpm-ostree install /tmp/scripts/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
+
+#tn5250j
+wget -P /tmp/scripts/files/ https://github.com/tn5250j/tn5250j/releases/download/0.8.0-beta2/tn5250j-0.8.0-beta2-no-depedencies.jar
+mkdir /usr/lib/tn5250j
+mv /tmp/scripts/files/tn5250j-0.8.0-beta2-no-depedencies.jar /usr/lib/tn5250j/tn5250j.jar
 
 
 
