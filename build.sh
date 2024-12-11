@@ -58,6 +58,14 @@ bash /tmp/scripts/wallpaper.sh
 mkdir /usr/tessi/
 cp -r /tmp/scripts/files/.ssh.zip /usr/tessi/
 cp -r /tmp/scripts/files/ip-config.txt /usr/tessi/
+
+
+#vmware horizon test
+
+wget -P /tmp/scripts/ https://download3.omnissa.com/software/CART25FQ2_LIN64_RPMPKG_2406/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
+rpm-ostree install /tmp/scripts/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
+
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
