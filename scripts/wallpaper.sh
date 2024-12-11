@@ -9,7 +9,6 @@ set -ouex pipefail
 
 cp /tmp/scripts/files/5275499.jpg /usr/share/backgrounds/default.png
 
-#!/bin/bash
 
 # Assume SOURCE_IMAGE is passed as the first argument or set as an environment variable
 SOURCE_IMAGE=${1:-${SOURCE_IMAGE}}
