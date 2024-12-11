@@ -67,7 +67,7 @@ wget -P /tmp/scripts/ https://download3.omnissa.com/software/CART25FQ2_LIN64_RPM
 rpm-ostree install /tmp/scripts/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
 
 
-curl https://downloads.citrix.com/22985/ICAClient-rhel-24.8.0.98-0.x86_64.rpm?__gda__=exp=1733950659~acl=/*~hmac=eade240dde6e5b826b6b8da84bdc21ef581d7f5462e3b94fc8f14b2c86f6d67b --output /tmp/files/citrix.rpm
+curl https://downloads.citrix.com/22985/ICAClient-rhel-24.8.0.98-0.x86_64.rpm?__gda__=exp=1733950659~acl=/*~hmac=eade240dde6e5b826b6b8da84bdc21ef581d7f5462e3b94fc8f14b2c86f6d67b --output /tmp/scripts/files/citrix.rpm
 rpm-ostree install /tmp/files/citrix.rpm
 
 
