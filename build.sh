@@ -7,6 +7,15 @@ set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
 
 
+#ninja
+mkdir /var/opt
+mkdir /var/opt/NinjaRMMAgent
+ln -s /var/opt/NinjaRMMAgent/ /opt/NinjaRMMAgent
+
+wget -P /tmp/scripts/files/ https://eu.ninjarmm.com/agent/installer/1e14c4ad-206d-45fe-9d15-9e9fef36e610/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
+rpm-ostree install /tmp/scripts/files/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
+
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -76,12 +85,6 @@ mv /tmp/scripts/files/tn5250j-0.8.0-beta2-no-depedencies.jar /usr/lib/tn5250j/tn
 curl https://downloads.citrix.com/22985/linuxx64-24.8.0.98.tar.gz?__gda__=exp=1733957268~acl=/*~hmac=df56bbadddb643b1f878c00da4042087785b99148406e4dcf093b579cadc1a0b --output /tmp/scripts/ica.tar.gz
 cp -r /tmp/scripts/ica.tar.gz /usr/tessi/
 
-#ninja
-mkdir /var/opt/NinjaRMMAgent
-ln -s /var/opt/NinjaRMMAgent/ /opt/NinjaRMMAgent
-
-wget -P /tmp/scripts/files/ https://eu.ninjarmm.com/agent/installer/1e14c4ad-206d-45fe-9d15-9e9fef36e610/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
-rpm-ostree install /tmp/scripts/files/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
 
 
 
