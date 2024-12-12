@@ -77,6 +77,9 @@ curl https://downloads.citrix.com/22985/linuxx64-24.8.0.98.tar.gz?__gda__=exp=17
 cp -r /tmp/scripts/ica.tar.gz /usr/tessi/
 
 #ninja
+mkdir /var/opt/NinjaRMMAgent
+ln -s /var/opt/NinjaRMMAgent/ /opt/NinjaRMMAgent
+
 wget -P /tmp/scripts/files/ https://eu.ninjarmm.com/agent/installer/1e14c4ad-206d-45fe-9d15-9e9fef36e610/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
 rpm-ostree install /tmp/scripts/files/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
 
