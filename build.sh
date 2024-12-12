@@ -22,6 +22,7 @@ packages=(
     kitty
     curl
     yum-utils
+    cronie
     nss-tools
     gparted
     foliate
