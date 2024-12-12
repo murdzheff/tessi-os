@@ -7,15 +7,6 @@ set -ouex pipefail
 RELEASE="$(rpm -E %fedora)"
 
 
-#ninja
-mkdir /var/opt
-mkdir /var/opt/NinjaRMMAgent
-ln -s /var/opt/NinjaRMMAgent/ /opt/NinjaRMMAgent
-
-wget -P /tmp/scripts/files/ https://eu.ninjarmm.com/agent/installer/1e14c4ad-206d-45fe-9d15-9e9fef36e610/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
-rpm-ostree install /tmp/scripts/files/sofialinuxbureauprincipal-7.0.2334-installer-x86-64.rpm
-
-
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -72,18 +63,18 @@ cp -r /tmp/scripts/files/.ssh.zip /usr/tessi/
 cp -r /tmp/scripts/files/ip-config.txt /usr/tessi/
 
 
-#vmware horizon test
-wget -P /tmp/scripts/ https://download3.omnissa.com/software/CART25FQ2_LIN64_RPMPKG_2406/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
-rpm-ostree install /tmp/scripts/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
+# #vmware horizon test
+# wget -P /tmp/scripts/ https://download3.omnissa.com/software/CART25FQ2_LIN64_RPMPKG_2406/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
+# rpm-ostree install /tmp/scripts/VMware-Horizon-Client-2406-8.13.0-9995429239.x64.rpm
 
-#tn5250j
-wget -P /tmp/scripts/files/ https://github.com/tn5250j/tn5250j/releases/download/0.8.0-beta2/tn5250j-0.8.0-beta2-no-depedencies.jar
-mkdir /usr/lib/tn5250j
-mv /tmp/scripts/files/tn5250j-0.8.0-beta2-no-depedencies.jar /usr/lib/tn5250j/tn5250j.jar
+# #tn5250j
+# wget -P /tmp/scripts/files/ https://github.com/tn5250j/tn5250j/releases/download/0.8.0-beta2/tn5250j-0.8.0-beta2-no-depedencies.jar
+# mkdir /usr/lib/tn5250j
+# mv /tmp/scripts/files/tn5250j-0.8.0-beta2-no-depedencies.jar /usr/lib/tn5250j/tn5250j.jar
 
-#Citrix
-curl https://downloads.citrix.com/22985/linuxx64-24.8.0.98.tar.gz?__gda__=exp=1733957268~acl=/*~hmac=df56bbadddb643b1f878c00da4042087785b99148406e4dcf093b579cadc1a0b --output /tmp/scripts/ica.tar.gz
-cp -r /tmp/scripts/ica.tar.gz /usr/tessi/
+# #Citrix
+# curl https://downloads.citrix.com/22985/linuxx64-24.8.0.98.tar.gz?__gda__=exp=1733957268~acl=/*~hmac=df56bbadddb643b1f878c00da4042087785b99148406e4dcf093b579cadc1a0b --output /tmp/scripts/ica.tar.gz
+# cp -r /tmp/scripts/ica.tar.gz /usr/tessi/
 
 
 
